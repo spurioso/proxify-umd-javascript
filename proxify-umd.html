@@ -19,18 +19,18 @@
                       
             function proxify() { // adds proxy prefix to submitted link and percent-encodes it
                 var permalink = $("#txtInput").val();
-				var proxyprefix = "http://proxy-um.researchport.umd.edu/login?url="; // change to your institution's proxy prefix
+		var proxyprefix = "http://proxy-um.researchport.umd.edu/login?url="; // change to your institution's proxy prefix
                 var permalinkproxied = proxyprefix + permalink; // add the proxy prefix to the user input;
                 var permaproxyencoded = encodeURIComponent(permalinkproxied); // URL-encode the whole link
                 bitly(permaproxyencoded);                             
             } // end proxify    
                            
              function bitly(longURL) { // sends proxied and percent-encoded link to Bitly API                             
-                 var base = "http://api.bitly.com/v3/shorten?";
-				 var key = ""; // register for a Bitly API key and put it here
-				 var login = "spurioso";
-				 var url = base + "login=" + login + "&apiKey=" + key + "&longUrl=" + longURL + "&format=json";				 
-                 $.getJSON(url, checkData);                                              
+                var base = "http://api.bitly.com/v3/shorten?";
+		var key = ""; // register for a Bitly API key and put it here
+		var login = "spurioso";
+		var url = base + "login=" + login + "&apiKey=" + key + "&longUrl=" + longURL + "&format=json";				 
+                $.getJSON(url, checkData);                                              
              } //end bitly           
              
              function checkData(data) { //checks status of Bitly API request and when finished adds the shortened Bitly link to the output textbox
