@@ -28,7 +28,7 @@
              function bitly(longURL) { // sends proxied and percent-encoded link to Bitly API                             
                 var base = "http://api.bitly.com/v3/shorten?";
 		var key = ""; // register for a Bitly API key and put it here
-		var login = "spurioso";
+		var login = ""; // register with Bitly and put your user name here
 		var url = base + "login=" + login + "&apiKey=" + key + "&longUrl=" + longURL + "&format=json";				 
                 $.getJSON(url, checkData);                                              
              } //end bitly           

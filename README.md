@@ -9,4 +9,4 @@ To adapt to your own library you need to make two changes:
 
 1. Change ```var proxyprefix``` to your own institution's proxy prefix
 2. Change ```var key``` to your own Bitly API key.
-
+3. Change ```var login``` to your own Bitly user name
