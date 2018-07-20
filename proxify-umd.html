@@ -3,8 +3,8 @@
 	<head>
         <title>Proxy Link Generator</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type ="text/javascript"
-            src ="http://www.google.com/jsapi"></script> <!-- You can also use "jquery-1.7.js" as your src-->
+				<script type ="text/javascript"
+            src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
         <script type ="text/javascript">
 
@@ -39,7 +39,7 @@
   						}), // end data
   						headers: {
     						"Content-Type": "application/json",
-    						"apikey": "YOUR API KEY HERE"
+    						"apikey": "YOUR_REBRANDLY_API_KEY_HERE"
   						}, // end headers
   						dataType: "json",
   						success: function (link) {
@@ -55,7 +55,7 @@
                 $("#txtOutput").val(test);
              } // end checkData
                //]]>
-        </script>
+         </script>
     </head>
     <body>
         <p>Insert a permalink from a library database into the form below and click the submit button. A new URL will be generated that includes a prefix that routes the link through the university's proxy server. The whole link is then shortened using the <a href="https://www.rebrandly.com/">Rebrandly</a> link shortener service. You can use the generated link to share links into databases with people off campus, and you can also use the link as a bookmark for your own future use. To do this the manual way, see the <a href="http://lib.guides.umd.edu/aecontent.php?pid=233784&sid=1934195">Link to a Journal</a>  tab</p>
